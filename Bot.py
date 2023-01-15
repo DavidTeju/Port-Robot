@@ -1,6 +1,7 @@
 from time import sleep
 
 import RPi.GPIO as GPIO
+# Only for use on Raspberry Pi's
 
 
 class Bot:
