@@ -65,7 +65,7 @@ def calc_worth(x, y, z):
 
 def optimal_offload_seq() -> list[tuple[tuple[int, int, int], int]]:
     global offload_sequence
-    offload_sequence = list()
+    offload_sequence = []
     indices = [(x, y, z) for z in range(lev_size) for y in range(row_size) for x in range(col_size) if grid[z][y][x]]
     while indices:
         best = min(indices, key=lambda tup: calc_worth(*tup))
